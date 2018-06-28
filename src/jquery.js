@@ -162,7 +162,7 @@
 						context = context instanceof jQuery ? context[0] : context;
 
 						// scripts is true for back-compat
-						jQuery.merge( this, jQuery.parseHTML(
+						jQuery.merge( this, jQuery.parseHTML( // 解析html
 							match[1],
 							context && context.nodeType ? context.ownerDocument || context : document,
 							true
