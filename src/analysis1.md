@@ -30,4 +30,11 @@
   jQuery.extend({
     这里的函数方法没有完全暴露到外面，部分不可用，仅供jquery.js调用
   })
+
+  (function( window, undefined ) {
+    <!-- Sizzle -->
+  })(window)
 })(window)
+
+document.defaultView
+  在浏览器中，document.defaultView 返回与文档关联的窗口对象，如果没有，则返回 null。This property is read-only. 在quirksmode模式下, IE 9 以下版本不支持 defaultView.
